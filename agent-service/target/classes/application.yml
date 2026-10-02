@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: agent-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/wellbeing
+    username: postgres
+    password: postgres

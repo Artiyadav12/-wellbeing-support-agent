@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: conversation-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/wellbeing
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update   # fine for learning/dev; use migrations (Flyway/Liquibase) for anything real
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
