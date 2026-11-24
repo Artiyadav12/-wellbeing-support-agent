@@ -59,3 +59,14 @@ next step: generating embeddings for each chunk.
 5. Construct the RAG prompt and call the LLM
 6. Add tool calling into `mock-claims-service` for live-data questions
 7. Wire in `conversation-service` so every turn gets persisted
+
+
+CI/CD
+1. build project (mvn clean package) it will create target file
+2. create docker file   (write steps to build jar)
+3. build docker images (docker build -t spring-boot-app .)
+4. run container (docker run -d -p 8081:8081 --name spring-boot-app spring-boot-app:latest)
+5. push docker image on docker hub repository
+6. docker tag spring-boot-app artiyadav4781/spring-boot-app:latest
+7. docker push artiyadav4781/spring-boot-app:latest
+8. 
